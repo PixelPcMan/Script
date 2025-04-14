@@ -1,1 +1,111 @@
-f
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Lubra/refs/heads/main/Ui"))()
+local Window = Library.CreateLib("Dead Rail (Pixel)", "DarkTheme")
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Boton")
+--inicio
+MainSection:NewButton("KillNpc", "Cam", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/KillNpc"))()
+end)
+--new
+MainSection:NewButton("Aimbot", "Head", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/Aimbot"))()
+end)
+--new
+MainSection:NewButton("NoClip", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/NoClipBotton"))()
+end)
+--end
+local Main = Window:NewTab("Player")
+local MainSection = Main:NewSection("Main")
+--inicio
+MainSection:NewButton("Dia/Noche", "Click", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/Fullbright"))()
+end)
+--new
+MainSection:NewButton("InfJump", "Inf", function()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then	game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+--end
+local Main = Window:NewTab("NewTp")
+local MainSection = Main:NewSection("Main")
+--inicio
+MainSection:NewButton("Tp🚂", "tp", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpTren"))()
+end)
+MainSection:NewButton("TpFortalesa", "Tp", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpFortalesa"))()
+end)
+--new
+MainSection:NewButton("Tp🏰", "Tp", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpCastillo"))()
+end)
+--new
+--end
+local Main = Window:NewTab("Recarga")
+local MainSection = Main:NewSection("RecargaAutomatica")
+--inicio
+MainSection:NewToggle("Armas", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/Recarga"))()
+            wait(0.1)
+        end
+    else
+        _G.on = false
+    end
+end)
+--end
+local Main = Window:NewTab("Drop")
+local MainSection = Main:NewSection("Maim")
+--inicio
+MainSection:NewToggle("Drop", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do game:GetService("ReplicatedStorage").Remotes.DropItem:FireServer()
+            wait(0.1)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewButton("Drop", " ", function()
+game:GetService("ReplicatedStorage").Remotes.DropItem:FireServer()
+end)
+--end
+local Main = Window:NewTab("Ejecutar")
+local MainSection = Main:NewSection("Script")
+--inicio
+MainSection:NewButton("TpEnd", "Gun", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpEnd"))()
+end)
+--end
+--Toggle
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 50, 0, 50)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "👾"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.AutoButtonColor = false
+local Corner = Instance.new("UICorner")
+Corner.CornerRadius = UDim.new(1, 0)
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
