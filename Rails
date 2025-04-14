@@ -45,6 +45,9 @@ MainSection:NewButton("Tp🏰", "Tp", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpCastillo"))()
 end)
 --new
+MainSection:NewButton("TpTesla", "Tp", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/TpFortalesa"))()
+end)
 --end
 local Main = Window:NewTab("Recarga")
 local MainSection = Main:NewSection("RecargaAutomatica")
