@@ -1,0 +1,185 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Lubra/refs/heads/main/Ui"))()
+local Window = Library.CreateLib("Pixel Farm", "DarkTheme")
+--Main
+local Main = Window:NewTab("farm")
+local MainSection = Main:NewSection("Free Key-Main-(All-Stage Auto Farm V2)")
+--inicio
+MainSection:NewButton("FarmTp", "Tp", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NooVster/v1.1/main/Source'))()
+end)
+--new
+local MainSection = Main:NewSection("Farm")
+MainSection:NewButton("TpFarm", "Fash", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Build%20The%20Boat%20Auto%20Win'))()
+end)
+-- MAIN
+local Main = Window:NewTab("fast")
+local MainSection = Main:NewSection("opciones avanzadas")
+--inicio
+MainSection:NewButton("FastGold", "Claim", function()
+local trigger = game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger
+local newPosition = Vector3.new(-72.2065353, 28.760376, 6033.35645)
+local newOrientation = CFrame.new(newPosition, newPosition + Vector3.new(-4.37113883e-08, 0, -1))
+trigger.CFrame = newOrientation
+wait(1)
+local trigger = game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger
+if trigger then
+    trigger.Size = Vector3.new(343.3999938964844, 70.5, 1682)
+    print("El tamaño del Trigger ha sido modificado.")
+else
+    print("El objeto Trigger no se encontró.")
+end
+end)
+--new
+MainSection:NewButton("RemoverFuturoLag", "Lag", function()
+local displayPrizesTemp = game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest:FindFirstChild("DisplayPrizesTemp")
+if displayPrizesTemp then
+    displayPrizesTemp:Destroy()
+    print("DisplayPrizesTemp ha sido eliminado.")
+else
+    print("DisplayPrizesTemp no fue encontrado.")
+end
+end)
+--new
+MainSection:NewButton("AntiAfk", "Afk", function()
+wait(0.5)
+local ba = Instance.new("ScreenGui")
+local ca = Instance.new("TextLabel")
+local da = Instance.new("Frame")
+local _b = Instance.new("TextLabel")
+local ab = Instance.new("TextLabel")
+ba.Parent = game.CoreGui
+ba.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ca.Parent = ba
+ca.Active = true
+ca.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+ca.Draggable = true
+ca.Position = UDim2.new(0.698610067, 0, 0.098096624, 0)
+ca.Size = UDim2.new(0, 60, 0, 20)
+ca.Font = Enum.Font.SourceSansSemibold
+ca.Text = "AntiAfk"
+ca.TextColor3 = Color3.new(1, 0, 0)
+ca.TextSize = 22
+da.Parent = ca
+da.BackgroundColor3 = Color3.new(0, 0, 0)
+da.Position = UDim2.new(0, 0, 1.0192306, 0)
+da.Size = UDim2.new(0, 60, 0, 40)
+_b.Parent = da
+_b.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+_b.Position = UDim2.new(0, 0, 0.800455689, 0)
+_b.Size = UDim2.new(0, 60, 0, 20)
+_b.Font = Enum.Font.Arial
+_b.Text = "Pixel"
+_b.TextColor3 = Color3.new(1, 0, 0)
+_b.TextSize = 20
+ab.Parent = da
+ab.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+ab.Position = UDim2.new(0, 0, 0.158377, 0)
+ab.Size = UDim2.new(0, 60, 0, 20)
+ab.Font = Enum.Font.ArialBold
+ab.Text = "Active"
+ab.TextColor3 = Color3.new(1, 0, 0)
+ab.TextSize = 20
+
+local bb = game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+    bb:CaptureController()
+    bb:ClickButton2(Vector2.new())
+    ab.Text = "Roblox tried kicking you but I didn't let them!"
+    wait(2)
+    ab.Text = "Status : Active"
+end)
+end)
+--Main
+local Main = Window:NewTab("Delete")
+local MainSection = Main:NewSection("Maim")
+--inicio
+MainSection:NewButton("TpEnd", "Fin", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108, -355, 9476)
+end)
+--new
+MainSection:NewToggle("EliminaTodo", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+            local function eliminarBalloonBlocks()
+    for _, objeto in pairs(workspace:GetDescendants()) do
+        if objeto.Name == "BalloonBlock" then
+            objeto:Destroy()
+        end
+    end
+end
+eliminarBalloonBlocks()
+            wait(1)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewButton("EliminaTodo", "Ball", function()
+local function eliminarBalloonBlocks()
+    for _, objeto in pairs(workspace:GetDescendants()) do
+        if objeto.Name == "BalloonBlock" then
+            objeto:Destroy()
+        end
+    end
+end
+eliminarBalloonBlocks()
+end)
+--new
+MainSection:NewToggle("EliminaGloblo", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local function eliminarBalloonParts()
+    for _, objeto in pairs(workspace:GetDescendants()) do
+        if objeto.Name == "BalloonPart" then
+            objeto:Destroy()
+        end
+    end
+end
+eliminarBalloonParts()
+           wait(1) 
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewButton("EliminaGlobo", "Ball", function()
+local function eliminarBalloonParts()
+    for _, objeto in pairs(workspace:GetDescendants()) do
+        if objeto.Name == "BalloonPart" then
+            objeto:Destroy()
+        end
+    end
+end
+eliminarBalloonParts()
+end)
+--new
+--Toggle
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 50, 0, 50)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "★"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.AutoButtonColor = false
+local Corner = Instance.new("UICorner")
+Corner.CornerRadius = UDim.new(1, 0)
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
