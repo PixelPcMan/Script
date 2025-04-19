@@ -91,12 +91,16 @@ MainSection:NewToggle("Hide", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/Hideguis"))()
             wait()
         end
     else
         _G.on = false
     end
+end)
+--new
+MainSection:NewButton("Hide", " ", function()
+
 end)
 --end
 MainSection:NewButton("Drop", " ", function()
