@@ -100,7 +100,22 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/
 end)
 --new
 MainSection:NewButton("Hide", " ", function()
+-- LocalScript
 
+-- Función para ocultar todas las GUIs
+local function hideGuis()
+    -- Obtiene el jugador local
+    local player = game.Players.LocalPlayer
+    -- Itera sobre todas las GUIs en el PlayerGui
+    for _, gui in pairs(player.PlayerGui:GetChildren()) do
+        if gui:IsA("ScreenGui") then
+            gui.Enabled = false -- Oculta la GUI
+        end
+    end
+end
+
+-- Llama a la función para ocultar las GUIs
+hideGuis()
 end)
 --end
 MainSection:NewButton("Drop", " ", function()
