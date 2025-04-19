@@ -93,7 +93,12 @@ end)
 local Main = Window:NewTab("Ejecutar")
 local MainSection = Main:NewSection("Script")
 --inicio
-MainSection:NewButton("TpEnd", "Gun", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpEnd"))()
+MainSection:NewButton("TpEnd", "Gun", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpEnd"))()
+end)
+--new
+MainSection:NewButton("Bonos", "Gun", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Bono"))()
 end)
 --end
 --Toggle
