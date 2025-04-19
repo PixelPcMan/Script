@@ -75,11 +75,11 @@ end)
 local Main = Window:NewTab("Drop")
 local MainSection = Main:NewSection("Maim")
 --inicio
-MainSection:NewToggle("Drop", "Auto", function(state)
+MainSection:NewToggle("Hides", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
-            game:GetService("ReplicatedStorage").Remotes.DropItem:FireServer()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/Hideguis"))()
             wait(0.1)
         end
     else
@@ -87,52 +87,6 @@ MainSection:NewToggle("Drop", "Auto", function(state)
     end
 end)
 --new
-MainSection:NewToggle("Hide", "Auto", function(state)
-    if state then
-        _G.on = true
-        while _G.on do
--- LocalScript
-
--- Función para ocultar todas las GUIs
-local function hideGuis()
-    -- Obtiene el jugador local
-    local player = game.Players.LocalPlayer
-    -- Itera sobre todas las GUIs en el PlayerGui
-    for _, gui in pairs(player.PlayerGui:GetChildren()) do
-        if gui:IsA("ScreenGui") then
-            gui.Enabled = false -- Oculta la GUI
-        end
-    end
-end
-
--- Llama a la función para ocultar las GUIs
-hideGuis()
-            wait()
-        end
-    else
-        _G.on = false
-    end
-end)
---new
-MainSection:NewButton("Hide", " ", function()
--- LocalScript
-
--- Función para ocultar todas las GUIs
-local function hideGuis()
-    -- Obtiene el jugador local
-    local player = game.Players.LocalPlayer
-    -- Itera sobre todas las GUIs en el PlayerGui
-    for _, gui in pairs(player.PlayerGui:GetChildren()) do
-        if gui:IsA("ScreenGui") then
-            gui.Enabled = false -- Oculta la GUI
-        end
-    end
-end
-
--- Llama a la función para ocultar las GUIs
-hideGuis()
-end)
---end
 MainSection:NewButton("Drop", " ", function()
 game:GetService("ReplicatedStorage").Remotes.DropItem:FireServer()
 end)
