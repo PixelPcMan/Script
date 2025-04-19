@@ -87,18 +87,18 @@ MainSection:NewToggle("Drop", "Auto", function(state)
     end
 end)
 --new
-MainSection:NewToggle("Hideguis", "Auto", function(state)
+MainSection:NewToggle("Hide", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/Hideguis"))()
+loadstring(game:HttpGet(""))()
             wait()
         end
     else
         _G.on = false
     end
 end)
---new
+--end
 MainSection:NewButton("Drop", " ", function()
 game:GetService("ReplicatedStorage").Remotes.DropItem:FireServer()
 end)
