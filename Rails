@@ -91,7 +91,7 @@ MainSection:NewToggle("Hideguis", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
-            loadstring(game:HttpGet(""))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/Hideguis"))()
             wait()
         end
     else
