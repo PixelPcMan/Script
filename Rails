@@ -86,6 +86,32 @@ MainSection:NewToggle("Drop", "Auto", function(state)
     end
 end)
 --new
+MainSection:NewToggle("Hideguis", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+-- Función para ocultar todas las GUIs
+local function hideGuis()
+    local player = game.Players.LocalPlayer
+    local playerGui = player:WaitForChild("PlayerGui")
+
+    -- Iterar sobre todas las Gui en PlayerGui y ocultarlas
+    for _, gui in pairs(playerGui:GetChildren()) do
+        if gui:IsA("ScreenGui") then
+            gui.Enabled = false
+        end
+    end
+end
+
+-- Llamar a la función hideGuis al ejecutar el script
+hideGuis()
+            wait()
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
 MainSection:NewButton("Drop", " ", function()
 game:GetService("ReplicatedStorage").Remotes.DropItem:FireServer()
 end)
