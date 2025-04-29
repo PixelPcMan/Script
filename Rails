@@ -5,11 +5,11 @@ local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Boton")
 --inicio
 MainSection:NewButton("KillNpc", "Cam", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/KillNpc"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/KillCamNPC"))()
 end)
 --new
 MainSection:NewButton("Aimbot", "Head", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/Aimbot"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Aimbot"))()
 end)
 --new
 MainSection:NewButton("NoClip", "Button", function()
