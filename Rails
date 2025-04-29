@@ -99,7 +99,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild
 end)
 --new
 MainSection:NewButton("Bonos", "Gun", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Bono"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Bonos"))()
 end)
 --end
 --Toggle
