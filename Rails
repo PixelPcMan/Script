@@ -35,7 +35,7 @@ local Main = Window:NewTab("NewTp")
 local MainSection = Main:NewSection("Main")
 --inicio
 MainSection:NewButton("Tp🚂", "tp", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpTren"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/TpTren"))()
 end)
 MainSection:NewButton("TpFortalesa", "Tp", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/TpFortalesa"))()
