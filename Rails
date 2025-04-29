@@ -38,7 +38,7 @@ MainSection:NewButton("Tp🚂", "tp", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpTren"))()
 end)
 MainSection:NewButton("TpFortalesa", "Tp", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpFortalesa"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/TpFortalesa"))()
 end)
 --new
 MainSection:NewButton("Tp🏰", "Tp", function()
