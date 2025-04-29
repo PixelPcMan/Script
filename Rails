@@ -54,22 +54,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRail
 end)
 --new
 MainSection:NewButton("TpFinal", "Tp", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/TpFinal"))()
-end)
---end
-local Main = Window:NewTab("Recarga")
-local MainSection = Main:NewSection("RecargaAutomatica")
---inicio
-MainSection:NewToggle("Armas", "Auto", function(state)
-    if state then
-        _G.on = true
-        while _G.on do
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/Recarga"))()
-            wait(0.1)
-        end
-    else
-        _G.on = false
-    end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Tpend"))()
 end)
 --end
 local Main = Window:NewTab("Drop")
