@@ -42,7 +42,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRail
 end)
 --new
 MainSection:NewButton("Tp🏰", "Tp", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpCastillo"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/TpCastillo"))()
 end)
 --new
 MainSection:NewButton("TpTesla", "Tp", function()
