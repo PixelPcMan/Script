@@ -29,7 +29,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1)
+            wait(1.1)
         end
     else
         _G.on = false
@@ -45,7 +45,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.1)
+            wait(1.2)
         end
     else
         _G.on = false
@@ -61,7 +61,23 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.2)
+            wait(1.3)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuySoul", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Soul Fruit"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.4)
         end
     else
         _G.on = false
@@ -77,7 +93,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.3)
+            wait(1.5)
         end
     else
         _G.on = false
@@ -93,7 +109,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.4)
+            wait(1.6)
         end
     else
         _G.on = false
@@ -109,7 +125,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.5)
+            wait(1.7)
         end
     else
         _G.on = false
@@ -125,7 +141,23 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.5)
+            wait(1.8)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuyCursed", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Cursed Fruit"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.9)
         end
     else
         _G.on = false
