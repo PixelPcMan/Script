@@ -4,10 +4,6 @@ local Window = Library.CreateLib("Pixel Farm", "DarkTheme")
 local Main = Window:NewTab("Buy")
 local MainSection = Main:NewSection("Free")
 --inicio
---Main
-local Main = Window:NewTab("Buy")
-local MainSection = Main:NewSection("Seeds")
---inicio
 MainSection:NewToggle("BuyBanana", "Auto", function(state)
     if state then
         _G.on = true
