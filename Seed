@@ -29,7 +29,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.5)
+            wait(1)
         end
     else
         _G.on = false
@@ -45,7 +45,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.5)
+            wait(1.1)
         end
     else
         _G.on = false
@@ -61,6 +61,54 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.2)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuyPassionfruit", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Passionfruit"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.3)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuyPapaya", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Papaya"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.4)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuyCursed", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Cursed"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
             wait(1.5)
         end
     else
@@ -68,12 +116,12 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
     end
 end)
 --new
-MainSection:NewToggle("Buy", "Auto", function(state)
+MainSection:NewToggle("BuyCursed", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "Lotus"
+    [1] = "CursedFruit"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
