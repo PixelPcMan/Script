@@ -173,7 +173,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(1.9)
+            wait(2)
         end
     else
         _G.on = false
