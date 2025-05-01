@@ -164,6 +164,22 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
     end
 end)
 --end
+MainSection:NewToggle("Passionfruit", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Passion"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.9)
+        end
+    else
+        _G.on = false
+    end
+end)
+--end
 --Toggle
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
