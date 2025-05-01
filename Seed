@@ -36,7 +36,39 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
     end
 end)
 --new
-MainSection:NewToggle("BuyLotus", "Auto", function(state)
+MainSection:NewToggle("BuySoul", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Soul"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.5)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuySoul", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "SoulFruit"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.5)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("Buy", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
