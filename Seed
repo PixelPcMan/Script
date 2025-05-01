@@ -1,10 +1,10 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Lubra/refs/heads/main/Ui"))()
-local Window = Library.CreateLib("Pixel Farm", "DarkTheme")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/libraryUi/refs/heads/main/library"))()
+local Window = Library.CreateLib("Dead Rail (Pixel)", "DarkTheme")
 --Main
-local Main = Window:NewTab("Buy")
-local MainSection = Main:NewSection("Free")
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Buy")
 --inicio
-MainSection:NewToggle("BuyBanana", "Auto", function(state)
+MainSection:NewToggle("Banana", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
@@ -19,13 +19,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuyLotus", "Auto", function(state)
+--end
+MainSection:NewToggle("SoulFruit", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "Lotus"
+    [1] = "Soul Fruit"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -35,13 +35,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuySoul", "Auto", function(state)
+--end
+MainSection:NewToggle("SoulFruit", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "Soul"
+    [1] = "SoulFruit"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -51,13 +51,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuySoul", "Auto", function(state)
+--end
+MainSection:NewToggle("Soul", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "SoulFruit"
+    [1] = "Soul"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -67,13 +67,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuySoul", "Auto", function(state)
+--end
+MainSection:NewToggle("Lotus", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "Soul Fruit"
+    [1] = "Lotus"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -83,29 +83,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuyPassionfruit", "Auto", function(state)
+--end
+MainSection:NewToggle("Cursed", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "Passion"
-}
-
-game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
-            wait(2)
-        end
-    else
-        _G.on = false
-    end
-end)
---new
-MainSection:NewToggle("BuyPassionfruit", "Auto", function(state)
-    if state then
-        _G.on = true
-        while _G.on do
-local args = {
-    [1] = "Passionfruit"
+    [1] = "Cursed Fruit"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -115,13 +99,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuyPapaya", "Auto", function(state)
+--end
+MainSection:NewToggle("CursedFruit", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "Papaya"
+    [1] = "CursedFruit"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -131,8 +115,8 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuyCursed", "Auto", function(state)
+--end
+MainSection:NewToggle("Cursed", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
@@ -147,13 +131,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuyCursed", "Auto", function(state)
+--end
+MainSection:NewToggle("Papaya", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "CursedFruit"
+    [1] = "Papaya"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -163,13 +147,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
-MainSection:NewToggle("BuyCursed", "Auto", function(state)
+--end
+MainSection:NewToggle("Passionfruit", "Auto", function(state)
     if state then
         _G.on = true
         while _G.on do
 local args = {
-    [1] = "Cursed Fruit"
+    [1] = "Passionfruit"
 }
 
 game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
@@ -179,13 +163,12 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
         _G.on = false
     end
 end)
---new
+--end
 --Toggle
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ResetOnSpawn = false
-
 local Toggle = Instance.new("TextButton")
 Toggle.Name = "Toggle"
 Toggle.Parent = ScreenGui
@@ -193,7 +176,7 @@ Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
 Toggle.Size = UDim2.new(0, 50, 0, 50)
 Toggle.Font = Enum.Font.SourceSans
-Toggle.Text = "★"
+Toggle.Text = "👾"
 Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
 Toggle.TextSize = 28.000
 Toggle.Draggable = true
