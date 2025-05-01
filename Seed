@@ -4,7 +4,54 @@ local Window = Library.CreateLib("Pixel Farm", "DarkTheme")
 local Main = Window:NewTab("Buy")
 local MainSection = Main:NewSection("Seeds")
 --inicio
+MainSection:NewToggle("BuyBanana", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Banana"
+}
 
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuyLotus", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Lotus"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.5)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuyLotus", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+    [1] = "Lotus"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(1.5)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
 --Toggle
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
