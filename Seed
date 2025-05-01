@@ -89,6 +89,22 @@ MainSection:NewToggle("BuyPassionfruit", "Auto", function(state)
         _G.on = true
         while _G.on do
 local args = {
+    [1] = "Passion"
+}
+
+game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(args))
+            wait(2)
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+MainSection:NewToggle("BuyPassionfruit", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
     [1] = "Passionfruit"
 }
 
