@@ -1,14 +1,14 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/libraryUi/refs/heads/main/library"))()
 local Window = Library.CreateLib("Dead Rail (Pixel)", "DarkTheme")
 --Main
-local Main = Window:NewTab("Delete")
-local MainSection = Main:NewSection("Ítems")
--inicio
-MainSection:NewButton("Blueberry", "Delete", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/blueberry"))()
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Boton")
+--inicio
+MainSection:NewButton("Blueberry", "Button", function()
+loadstring(game:HttpGet("hhh"))()
 end)
 --end
-local Main = Window:NewTab("Player")
+local Main = Window:NewTab("Buy")
 local MainSection = Main:NewSection("Main")
 --inicio
 MainSection:NewToggle("Banana", "Auto", function(state)
