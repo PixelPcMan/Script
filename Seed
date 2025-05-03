@@ -7,9 +7,9 @@ local MainSection = Main:NewSection("Ítems")
 MainSection:NewButton("Blueberry", "Delete", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/blueberry"))()
 end)
---new
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Buy")
+--end
+local Main = Window:NewTab("Player")
+local MainSection = Main:NewSection("Main")
 --inicio
 MainSection:NewToggle("Banana", "Auto", function(state)
     if state then
