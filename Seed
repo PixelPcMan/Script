@@ -4,6 +4,18 @@ local Window = Library.CreateLib("Dead Rail (Pixel)", "DarkTheme")
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Boton")
 --inicio
+MainSection:NewButton("Durian", "Button", function()
+loadstring(game:HttpGet("jjjj"))()
+end)
+--end
+MainSection:NewButton("coco", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/Coco"))()
+end)
+--end
+MainSection:NewButton("DragonFruit", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DragonFruit"))()
+end)
+--end
 MainSection:NewButton("Banana", "Button", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/Banana"))()
 end)
