@@ -207,6 +207,13 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
     end
 end)
 --end
+local Main = Window:NewTab("Part")
+local MainSection = Main:NewSection("Boton")
+--inicio
+MainSection:NewButton("Banana", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/Mango"))()
+end)
+--end
 --Toggle
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
