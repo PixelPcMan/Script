@@ -211,7 +211,7 @@ local Main = Window:NewTab("Part")
 local MainSection = Main:NewSection("Boton")
 --inicio
 MainSection:NewButton("Banana", "10", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/Part10Banana"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/PartBanana"))()
 end)
 --end
 --Toggle
