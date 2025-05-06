@@ -15,6 +15,10 @@ end)
 MainSection:NewButton("NoClip", "Button", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/NoClipBotton"))()
 end)
+--new
+MainSection:NewButton("Weld", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Weld"))()
+end)
 --end
 local Main = Window:NewTab("Player")
 local MainSection = Main:NewSection("Main")
