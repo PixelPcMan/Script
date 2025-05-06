@@ -57,38 +57,11 @@ MainSection:NewButton("TpFinal", "Tp", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Tpend"))()
 end)
 --end
-local Main = Window:NewTab("Drop")
+local Main = Window:NewTab("DupeFake")
 local MainSection = Main:NewSection("Maim")
 --inicio
-MainSection:NewToggle("Hides", "Auto", function(state)
-    if state then
-        _G.on = true
-        while _G.on do
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Universal/refs/heads/main/Hideguis"))()
-            wait(0.1)
-        end
-    else
-        _G.on = false
-    end
-end)
---new
-MainSection:NewButton("Drop", " ", function()
-game:GetService("ReplicatedStorage").Remotes.DropItem:FireServer()
-end)
---end
-local Main = Window:NewTab("Ejecutar")
-local MainSection = Main:NewSection("Script")
---inicio
-MainSection:NewButton("TpEnd", "Gun", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/LibryRaild/refs/heads/main/TpEnd"))()
-end)
---new
-MainSection:NewButton("Find", "Gun", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/Script/refs/heads/main/Find"))()
-end)
---new
-MainSection:NewButton("Bonos", "Gun", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Bonos"))()
+MainSection:NewButton("UnicornioV1", "Fake", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Tpend"))()
 end)
 --end
 --Toggle
