@@ -68,6 +68,13 @@ MainSection:NewButton("🦄V2", "Fake", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/DupeUnicorV2"))()
 end)
 --end
+local Main = Window:NewTab("Scripys")
+local MainSection = Main:NewSection("New")
+--inicio
+MainSection:NewButton("OpScript", "Op", function()
+loadstring(game:HttpGet("hhh"))()
+end)
+--new
 --end
 --Toggle
 local ScreenGui = Instance.new("ScreenGui")
