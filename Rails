@@ -60,9 +60,14 @@ end)
 local Main = Window:NewTab("DupeFake")
 local MainSection = Main:NewSection("Maim")
 --inicio
-MainSection:NewButton("UnicornioV1", "Fake", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Tpend"))()
+MainSection:NewButton("🦄", "Fake", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/DupeUnicorV1"))()
 end)
+--new
+MainSection:NewButton("🦄V2", "Fake", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/DupeUnicorV2"))()
+end)
+--end
 --end
 --Toggle
 local ScreenGui = Instance.new("ScreenGui")
