@@ -76,7 +76,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRail
 end)
 --new
 MainSection:NewButton("ToraScript", "Op", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/KillCamNPC"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/Tora"))()
 end)
 --new
 --end
