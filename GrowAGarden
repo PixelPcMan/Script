@@ -8,10 +8,6 @@ MainSection:NewButton("Apple", "Button", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteApple"))()
 end)
 --end
-MainSection:NewButton("Dele", "Button", function()
-loadstring(game:HttpGet("gg"))()
-end)
---end
 MainSection:NewButton("Mango", "Button", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteMango"))()
 end)
@@ -44,20 +40,24 @@ MainSection:NewButton("Corn", "Button", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteCorn"))()
 end)
 --new
-MainSection:NewButton("jjj", "Button", function()
-loadstring(game:HttpGet("ggg"))()
+MainSection:NewButton("Strawberry", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteStrawberry"))()
 end)
 --new
-MainSection:NewButton("jjj", "Button", function()
-loadstring(game:HttpGet("ggg"))()
+MainSection:NewButton("Uvas", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteGrape"))()
 end)
 --new
-MainSection:NewButton("jjj", "Button", function()
-loadstring(game:HttpGet("ggg"))()
+MainSection:NewButton("Cactus", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteCactus"))()
 end)
 --new
-MainSection:NewButton("jjj", "Button", function()
-loadstring(game:HttpGet("ggg"))()
+MainSection:NewButton("Bamboo", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBamboo"))()
+end)
+--new
+MainSection:NewButton("Delete", "Button", function()
+loadstring(game:HttpGet(""))()
 end)
 --end
 local Main = Window:NewTab("Buy")
