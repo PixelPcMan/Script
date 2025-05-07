@@ -35,6 +35,14 @@ end)
 MainSection:NewButton("Blueberry", "Button", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/blueberry"))()
 end)
+--new
+MainSection:NewButton("Tomato", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteTomato"))()
+end)
+--new
+MainSection:NewButton("Corn", "Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteCorn"))()
+end)
 --end
 local Main = Window:NewTab("Buy")
 local MainSection = Main:NewSection("Main")
