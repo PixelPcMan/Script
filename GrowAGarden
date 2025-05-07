@@ -239,11 +239,22 @@ game:GetService("ReplicatedStorage").GameEvents.BuySeedStock:FireServer(unpack(a
     end
 end)
 --end
-local Main = Window:NewTab("Part")
+local Main = Window:NewTab("PartDelete")
 local MainSection = Main:NewSection("Boton")
 --inicio
-MainSection:NewButton("Banana", "10", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/PartBanana"))()
+MainSection:NewButton("BananaHojas", "10", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
+end)
+--end
+local Main = Window:NewTab("Script's")
+local MainSection = Main:NewSection("Boton")
+--inicio
+MainSection:NewButton("ScriptKey", "Lunor", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
+end)
+--new
+MainSection:NewButton("ScriptDog", "NoKey", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
 end)
 --end
 --Toggle
