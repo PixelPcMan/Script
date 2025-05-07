@@ -87,8 +87,16 @@ end)
 MainSection:NewButton("GoldBart", "Fake", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/GoldBart"))()
 end)
+--nee
+MainSection:NewButton("Espada", "Fake", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/DupeEspada"))()
+end)
+--new
+MainSection:NewButton("Hacha", "Fake", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/ScriptRails/refs/heads/main/DupeHacha"))()
+end)
 --end
-local Main = Window:NewTab("Scripys")
+local Main = Window:NewTab("Scripts")
 local MainSection = Main:NewSection("New")
 --inicio
 MainSection:NewButton("OpScript", "Op", function()
