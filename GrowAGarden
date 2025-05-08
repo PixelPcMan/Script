@@ -250,9 +250,8 @@ local Main = Window:NewTab("Script's")
 local MainSection = Main:NewSection("Boton")
 --inicio
 MainSection:NewButton("ScriptKey", "Lunor", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4xScripts/Loader/refs/heads/main/loader2.lua"))()
 end)
---new
 MainSection:NewButton("ScriptDog", "NoKey", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
 end)
