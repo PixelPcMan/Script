@@ -4,8 +4,22 @@ local Window = Library.CreateLib("Mi Game (Pixel)", "DarkTheme")
 local Main = Window:NewTab("DeleteFruts")
 local MainSection = Main:NewSection("Boton")
 --inicio
-MainSection:NewButton("Apple", "Button", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteApple"))()
+MainSection:NewButton("Name del item", " ", function()
+end)
+--new
+MainSection:NewToggle("Auto Buy", "Item", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local args = {
+	"Name"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+            wait(0.5)
+        end
+    else
+        _G.on = false
+    end
 end)
 --end
 --Toggle
