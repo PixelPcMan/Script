@@ -27,7 +27,7 @@ for _, collectible in pairs(collectiblesFolder:GetChildren()) do
 end
 
 if closestPart then
-    humanoidRootPart.CFrame = CFrame.new(closestPart.Position + Vector3.new(0, 3, 0)) -- Teletransportar encima de la parte
+    humanoidRootPart.CFrame = CFrame.new(closestPart.Position + Vector3.new(0, 0, 0)) -- Teletransportar encima de la parte
 end
             wait(0.5)
         end
