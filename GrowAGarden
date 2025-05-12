@@ -257,6 +257,10 @@ MainSection:NewButton("ScriptDog", "NoKey", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
 end)
 --new
+MainSection:NewButton("Tora", "NoKey", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/GrowaGarden"))()
+end)
+--new
 MainSection:NewButton("Server", "NoKey", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Old-server-finder-23398"))()
 end)
