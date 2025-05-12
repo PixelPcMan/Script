@@ -9,42 +9,26 @@ MainSection:NewToggle("Tp", "300", function(state)
         _G.on = true
         while _G.on do
             local player = game.Players.LocalPlayer
-            local character = player.Character or player.CharacterAdded:Wait()
-            local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
-            local collectiblesFolder = game.Workspace:FindFirstChild("Collectibles")
-            local range = 1000 -- Rango modificado a 1000
+local collectiblesFolder = workspace:WaitForChild("Collectibles")
+local closestPart = nil
+local closestDistance = 500 -- Rango de 500 unidades
 
-            local function getClosestPart()
-                local closestPart = nil
-                local closestDistance = range
+for _, collectible in pairs(collectiblesFolder:GetChildren()) do
+    if collectible:IsA("Part") then
+        local distance = (humanoidRootPart.Position - collectible.Position).magnitude
+        if distance < closestDistance then
+            closestDistance = distance
+            closestPart = collectible
+        end
+    end
+end
 
-                if collectiblesFolder then
-                    for _, collectible in ipairs(collectiblesFolder:GetChildren()) do
-                        if collectible:IsA("Part") then
-                            local distance = (humanoidRootPart.Position - collectible.Position).magnitude
-                            if distance < closestDistance then
-                                closestDistance = distance
-                                closestPart = collectible
-                            end
-                        end
-                    end
-                end
-                
-                return closestPart
-            end
-
-            local function moveToClosestPart()
-                local closestPart = getClosestPart()
-
-                if closestPart then
-                    humanoidRootPart.CFrame = closestPart.CFrame -- Mover el jugador directamente a la parte
-                else
-                    print("No hay partes cercanas en el rango especificado.")
-                end
-            end
-
-            moveToClosestPart()
+if closestPart then
+    humanoidRootPart.CFrame = CFrame.new(closestPart.Position + Vector3.new(0, 3, 0)) -- Teletransportar encima de la parte
+end
             wait(0.5)
         end
     else
