@@ -252,8 +252,13 @@ local MainSection = Main:NewSection("Boton")
 MainSection:NewButton("ScriptKey", "Lunor", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4xScripts/Loader/refs/heads/main/loader2.lua"))()
 end)
+--new
 MainSection:NewButton("ScriptDog", "NoKey", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
+end)
+--new
+MainSection:NewButton("Server", "NoKey", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Old-server-finder-23398"))()
 end)
 --end
 --Toggle
