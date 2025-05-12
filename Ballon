@@ -1,9 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/libraryUi/refs/heads/main/library"))()
 local Window = Library.CreateLib("Grow A Garden (Pixel)", "DarkTheme")
 --Main
-local Main = Window:NewTab("DeleteFruts")
-local MainSection = Main:NewSection("Boton")
---inicio
 local Main = Window:NewTab("Buy")
 local MainSection = Main:NewSection("Main")
 --inicio
@@ -41,7 +38,7 @@ local function moveToClosestPart()
     local closestPart = getClosestPart()
 
     if closestPart then
-        humanoidRootPart.CFrame = closestPart.CFrame + Vector3.new(0, 3, 0) -- Mover el jugador justo encima de la parte
+        humanoidRootPart.CFrame = closestPart.CFrame + Vector3.new(0, 0, 0) -- Mover el jugador justo encima de la parte
     else
         print("No hay partes cercanas en el rango especificado.")
     end
@@ -64,7 +61,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
 local collectiblesFolder = game.Workspace:FindFirstChild("Collectibles")
-local range = 100 -- Rango modificado a 100
+local range = 500 -- Rango modificado a 100
 
 local function getClosestPart()
     local closestPart = nil
@@ -89,7 +86,7 @@ local function moveToClosestPart()
     local closestPart = getClosestPart()
 
     if closestPart then
-        humanoidRootPart.CFrame = closestPart.CFrame + Vector3.new(0, 3, 0) -- Mover el jugador justo encima de la parte
+        humanoidRootPart.CFrame = closestPart.CFrame + Vector3.new(0, 0, 0) -- Mover el jugador justo encima de la parte
     else
         print("No hay partes cercanas en el rango especificado.")
     end
