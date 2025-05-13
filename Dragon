@@ -1,1 +1,68 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/libraryUi/refs/heads/main/library"))()
+local Window = Library.CreateLib("Grow A Garden (Pixel)", "DarkTheme")
+--Main
+local Main = Window:NewTab("Buy")
+local MainSection = Main:NewSection("Main")
+--inicio
+MainSection:NewToggle("Tp", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+local player = game.Players.LocalPlayer -- Usa game.Players para un Script normal
+local character = player.Character or player.CharacterAdded:Wait()
 
+local function teleportTo(position)
+    character:MoveTo(position)
+    wait(0.5) -- Espera 0.5 segundos solo para la primera teletransportación
+end
+
+-- Teletransporte a las coordenadas iniciales
+teleportTo(Vector3.new(-8, 83, 9))
+
+-- Teletransporte a las partes en la carpeta "Checkpoints"
+local checkpointsFolder = workspace:FindFirstChild("Checkpoints")
+
+if checkpointsFolder then
+    for i = 15, 17 do
+        local part = checkpointsFolder:FindFirstChild(tostring(i))
+        if part then
+            character:MoveTo(part.Position)
+            wait(0) -- Sin espera entre teletransportes
+        else
+            warn("Checkpoint " .. i .. " no encontrado.")
+        end
+    end
+else
+    warn("La carpeta 'Checkpoints' no fue encontrada en el espacio de trabajo.")
+end
+            wait()
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
+--Toggle
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 50, 0, 50)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "👾"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.AutoButtonColor = false
+local Corner = Instance.new("UICorner")
+Corner.CornerRadius = UDim.new(1, 0)
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
