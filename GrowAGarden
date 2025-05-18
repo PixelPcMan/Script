@@ -249,7 +249,22 @@ end)
 local Main = Window:NewTab("Shop")
 local MainSection = Main:NewSection("Boton")
 --inicio
-local Main = Window:NewTab("Shop")
+Section:NewToggle("Gear", "Shop", function(state)
+    local player = game.Players.LocalPlayer
+    local gearShop = player:WaitForChild("PlayerGui"):WaitForChild("Gear_Shop")
+
+    if state then
+        -- Habilita la interfaz
+        gearShop.Enabled = true
+        print("Toggle On: Gear_Shop habilitada")
+    else
+        -- Deshabilita la interfaz
+        gearShop.Enabled = false
+        print("Toggle Off: Gear_Shop deshabilitada")
+    end
+end)
+--end
+local Main = Window:NewTab("Script's")
 local MainSection = Main:NewSection("Boton")
 --inicio
 MainSection:NewButton("ScriptKey", "Lunor", function()
