@@ -246,7 +246,10 @@ MainSection:NewButton("BananaHojas", "10", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
 end)
 --end
-local Main = Window:NewTab("Script's")
+local Main = Window:NewTab("Shop")
+local MainSection = Main:NewSection("Boton")
+--inicio
+local Main = Window:NewTab("Shop")
 local MainSection = Main:NewSection("Boton")
 --inicio
 MainSection:NewButton("ScriptKey", "Lunor", function()
