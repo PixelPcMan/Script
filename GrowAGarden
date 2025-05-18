@@ -92,7 +92,29 @@ MainSection:NewToggle("Gear", "Shop", function(state)
         print("Error: Gear_Shop no encontrado")
     end
 end)
---end
+--new
+MainSection:NewToggle("Gear", "Shop", function(state)
+local player = game.Players.LocalPlayer
+local eventShopUI = player:WaitForChild("PlayerGui"):FindFirstChild("EventShop_UI")
+
+if eventShopUI then
+    eventShopUI.Enabled = true
+    print("EventShop_UI habilitado.")
+else
+    print("Error: EventShop_UI no encontrado.")
+end
+        else
+local player = game.Players.LocalPlayer
+local eventShopUI = player:WaitForChild("PlayerGui"):FindFirstChild("EventShop_UI")
+
+if eventShopUI then
+    eventShopUI.Enabled = false
+    print("EventShop_UI habilitado.")
+else
+    print("Error: EventShop_UI no encontrado.")
+end
+end)
+--new
 local Main = Window:NewTab("Script's")
 local MainSection = Main:NewSection("Boton")
 --inicio
