@@ -104,15 +104,30 @@ else
     print("Error: EventShop_UI no encontrado.")
 end
         else
-local player = game.Players.LocalPlayer
-local eventShopUI = player:WaitForChild("PlayerGui"):FindFirstChild("EventShop_UI")
-
-if eventShopUI then
     eventShopUI.Enabled = false
     print("EventShop_UI habilitado.")
 else
     print("Error: EventShop_UI no encontrado.")
 end
+end)
+--new
+MainSection:NewToggle("Seed Shop", "Shop", function(state)
+    local player = game.Players.LocalPlayer
+    local seedShop = player:WaitForChild("PlayerGui"):FindFirstChild("Seed_Shop")
+
+    if seedShop then
+        if state then
+            -- Habilita la interfaz
+            seedShop.Enabled = true
+            print("Toggle On: Seed_Shop habilitada")
+        else
+            -- Deshabilita la interfaz
+            seedShop.Enabled = false
+            print("Toggle Off: Seed_Shop deshabilitada")
+        end
+    else
+        print("Error: Seed_Shop no encontrado")
+    end
 end)
 --new
 local Main = Window:NewTab("Script's")
