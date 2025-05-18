@@ -132,6 +132,10 @@ MainSection:NewToggle("Event Shop", "Shop", function(state)
     end
 end)
 --end
+local Main = Window:NewTab("Buy")
+local MainSection = Main:NewSection("Boton")
+--inicio
+
 local Main = Window:NewTab("Script's")
 local MainSection = Main:NewSection("Boton")
 --inicio
