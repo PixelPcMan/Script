@@ -93,24 +93,6 @@ MainSection:NewToggle("Gear", "Shop", function(state)
     end
 end)
 --new
-MainSection:NewToggle("Gear", "Shop", function(state)
-local player = game.Players.LocalPlayer
-local eventShopUI = player:WaitForChild("PlayerGui"):FindFirstChild("EventShop_UI")
-
-if eventShopUI then
-    eventShopUI.Enabled = true
-    print("EventShop_UI habilitado.")
-else
-    print("Error: EventShop_UI no encontrado.")
-end
-        else
-    eventShopUI.Enabled = false
-    print("EventShop_UI habilitado.")
-else
-    print("Error: EventShop_UI no encontrado.")
-end
-end)
---new
 MainSection:NewToggle("Seed Shop", "Shop", function(state)
     local player = game.Players.LocalPlayer
     local seedShop = player:WaitForChild("PlayerGui"):FindFirstChild("Seed_Shop")
