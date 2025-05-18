@@ -249,7 +249,7 @@ end)
 local Main = Window:NewTab("Shop")
 local MainSection = Main:NewSection("Boton")
 --inicio
-Section:NewToggle("Gear", "Shop", function(state)
+MainSection:NewToggle("Gear", "Shop", function(state)
     local player = game.Players.LocalPlayer
     local gearShop = player:WaitForChild("PlayerGui"):WaitForChild("Gear_Shop")
 
