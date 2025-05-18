@@ -135,7 +135,18 @@ end)
 local Main = Window:NewTab("Buy")
 local MainSection = Main:NewSection("Boton")
 --inicio
-
+MainSection:NewToggle("Bambu", "Auto", function(state)
+    if state then
+        _G.on = true
+        while _G.on do
+loadstring(game:HttpGet(""))()
+           wait(0.5) 
+        end
+    else
+        _G.on = false
+    end
+end)
+--new
 local Main = Window:NewTab("Script's")
 local MainSection = Main:NewSection("Boton")
 --inicio
