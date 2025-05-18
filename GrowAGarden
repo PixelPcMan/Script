@@ -112,6 +112,25 @@ MainSection:NewToggle("Seed Shop", "Shop", function(state)
         print("Error: Seed_Shop no encontrado")
     end
 end)
+--new
+MainSection:NewToggle("Event Shop", "Shop", function(state)
+    local player = game.Players.LocalPlayer
+    local eventShop = player:WaitForChild("PlayerGui"):FindFirstChild("EventShop_UI")
+
+    if eventShop then
+        if state then
+            -- Habilita la interfaz
+            eventShop.Enabled = true
+            print("Toggle On: EventShop_UI habilitada")
+        else
+            -- Deshabilita la interfaz
+            eventShop.Enabled = false
+            print("Toggle Off: EventShop_UI deshabilitada")
+        end
+    else
+        print("Error: EventShop_UI no encontrado")
+    end
+end)
 --end
 local Main = Window:NewTab("Script's")
 local MainSection = Main:NewSection("Boton")
