@@ -71,47 +71,7 @@ MainSection:NewButton("BananaHojas", "10", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PixelPcMan/GrowAGarden/refs/heads/main/DeleteBananaParts"))()
 end)
 --end
-local Main = Window:NewTab("Shop")
-local MainSection = Main:NewSection("Boton")
---inicio
-MainSection:NewToggle("Gear", "Shop", function(state)
-    local player = game.Players.LocalPlayer
-    local gearShop = player:WaitForChild("PlayerGui"):FindFirstChild("Gear_Shop")
 
-    if gearShop then
-        if state then
-            -- Habilita la interfaz
-            gearShop.Enabled = true
-            print("Toggle On: Gear_Shop habilitada")
-        else
-            -- Deshabilita la interfaz
-            gearShop.Enabled = false
-            print("Toggle Off: Gear_Shop deshabilitada")
-        end
-    else
-        print("Error: Gear_Shop no encontrado")
-    end
-end)
---new
-MainSection:NewToggle("Seed Shop", "Shop", function(state)
-    local player = game.Players.LocalPlayer
-    local seedShop = player:WaitForChild("PlayerGui"):FindFirstChild("Seed_Shop")
-
-    if seedShop then
-        if state then
-            -- Habilita la interfaz
-            seedShop.Enabled = true
-            print("Toggle On: Seed_Shop habilitada")
-        else
-            -- Deshabilita la interfaz
-            seedShop.Enabled = false
-            print("Toggle Off: Seed_Shop deshabilitada")
-        end
-    else
-        print("Error: Seed_Shop no encontrado")
-    end
-end)
---new
 local Main = Window:NewTab("Script's")
 local MainSection = Main:NewSection("Boton")
 --inicio
